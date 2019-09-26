@@ -14,6 +14,6 @@ public class SimpleController {
 	
 	@ModelAttribute("name")
 	public String getName() {
-		return "David"; asfsa
+		return "David";
 	}
 }
