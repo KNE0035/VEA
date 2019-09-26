@@ -34,7 +34,7 @@ public class PersonController {
 	
 	@RequestMapping("/login")
 	public String login() {
-		return "loginPage"; sa
+		return "loginPage"; saasf
 	}
 	
 	@RequestMapping("/registerPage")
