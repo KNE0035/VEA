@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Person list</title>
+</head>
+<body>
+
+<table>
+	<tr><th>name</th> <th>id</th> </tr>
+	<tr th:each="p : ${personList}">
+		<td th:text = ${p.name}></td>
+		<td th:text = ${p.id}></td>
+	</tr>
+</table>
+
+</body>
+</html>
