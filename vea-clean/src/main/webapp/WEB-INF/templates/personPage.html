@@ -7,12 +7,18 @@
 <body>
 
 <table>
-	<tr><th>name</th> <th>id</th> </tr>
+	<tr>  <th>id</th> <th>name</th> <th>surname</th> <th>sallary</th> </tr>
 	<tr th:each="p : ${personList}">
-		<td th:text = ${p.name}></td>
 		<td th:text = ${p.id}></td>
+		<td th:text = ${p.name}></td>
+		<td th:text = ${p.surname}></td>
+		<td th:text  = ${p.sallary}></td>
 	</tr>
 </table>
+
+<form action="#" th:action="@{/editPersonPage}" method="post">
+     <p><input type="submit" value="Submit" /></p>
+</form>
 
 </body>
 </html>

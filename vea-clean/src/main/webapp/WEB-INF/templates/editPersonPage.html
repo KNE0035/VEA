@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Person edit page</title>
+</head>
+<body>
+	
+	<form action="#" th:action="@{/savePerson}" th:object="${editedPerson}">
+	Id: <input type="text" disabled="true" th:field="*{id}"/>
+	Name: <input type="text" th:field="*{name}"/>
+	Surname: <input type="text" th:field="*{surname}"/>
+	Sallary: <input type="text" th:field="*{sallary}"/>
+	<input type="submit" value="edit">
+</form>
+
+</body>
+</html>
